@@ -18,7 +18,7 @@ fun main() {
 
 
 
-    // 반복문이 true이면
+    // 반복문이 true이면 무한대로 실행
     while (true) {
 
         // 연산자 입력받기
@@ -56,7 +56,7 @@ fun main() {
                     RemainAbstractOperation()
                 }
                 else -> {
-                    println("잘못된 연산자 입니다")
+                    println("적용되지 않는 연산자입니다. 다른 연산자를 입력해주세요")
                     continue
                 }
             }
