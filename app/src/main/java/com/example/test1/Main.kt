@@ -39,27 +39,17 @@ fun main() {
             val a =
 
                 when (curcul) {
-                "+" -> {
-                    AddAbstractOperation()
-                }
-                "-" -> {
-                    SubstractAbstractOperation()
-                }
-                "*" -> {
-                    MultiplyAbstractOperation()
-                }
-                "/" -> {
-                    DivideAbstractOperation()
-                }
-
-                "%" -> {
-                    RemainAbstractOperation()
-                }
+                "+" -> AddAbstractOperation()
+                "-" -> SubstractAbstractOperation()
+                "*" -> MultiplyAbstractOperation()
+                "/" -> DivideAbstractOperation()
+                "%" -> RemainAbstractOperation()
                 else -> {
                     println("적용되지 않는 연산자입니다. 다른 연산자를 입력해주세요")
                     continue
                 }
             }
+
 
             // 계속 추가로 연산할 수 있도록 num1에 넣어줌
             num1 = a.calculator(num1,num2)
